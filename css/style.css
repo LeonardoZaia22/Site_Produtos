@@ -24,3 +24,15 @@
     color:black;
 }
 
+.carousel-item{
+    width: 600px;
+    height: 600px;
+    margin-left: 500px;
+}
+
+.carousel img {
+    width: 100px; 
+    height: 400px; 
+}
+
+
