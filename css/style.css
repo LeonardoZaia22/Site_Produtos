@@ -1,26 +1,63 @@
-.card {
-    background-color: #f0f0f0; /*  cor dos cards */
-}
-
-.card-title {
-     color: #090c1b; /*titulo dos cards */
-}
-
-.card-text {
-    color: #1f1f1f; /*textos dos cards */
-}
-
-.btn-primary {
-    background-color: rgb(49, 150, 245); /* botão de comprar */
-   
-}
-
-.btn-primary:hover {
-    background-color: #eeecec;
-}
-
-
-.nav-link {
-    color:black;
-}
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; /* Definindo fonte principal */
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .hero {
+    position: relative;
+    text-align: center;
+    color: rgb(7, 34, 7);
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin: 10px 0;
+    color: rgb(7, 34, 7);
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .hero-text button {
+    background-color: white;
+    border: 2px solid #1a2a44;
+    color: #1a2a44;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .hero-text button:hover {
+    background-color: #1a2a44;
+    color: white;
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
 
