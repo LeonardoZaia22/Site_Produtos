@@ -1,28 +1,17 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-<<<<<<< HEAD
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Equipamentos para Futebol</title>
   <!-- Incluindo links para fontes e Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"/>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="css/style.css" rel="stylesheet"/> 
-  <style>
-    /* Adiciona rolagem suave */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* Estilos para o carrossel */
-    .carousel-inner img {
-      width: 100%;  /* Ajuste a largura para 100% do contêiner */
-      height: auto; /* Altura automática para manter a proporção */
-      max-height: 300px; /* Define uma altura máxima para as imagens */
-    }
-  </style>
+  <link href="css/style.css" rel="stylesheet"/> <!-- Estilos separados -->
 </head>
 <body>
-  <!-- Barra de navegação responsiva -->
+  <!-- nabar-->
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a2a44;">
     <a class="navbar-brand" href="#">Equipamentos para Futebol</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,27 +32,27 @@
     </div>
   </nav>
 
-  <!-- Seção principal com imagem e texto -->
+  <!-- tala incial -->
   <div class="hero">
-    <img src="img/img01.jpg" alt="" width="1200" height="500"/>
-    <div class="hero-text">
+    <img src="img/img01.jpg" alt="Imagem principal" class="img-fluid w-100" height="500"/>
+    <div class="hero-text text-center">
       <p>FAÇA UM GOL EM SUAS COMPRAS</p>
       <h1>Equipamentos para Futebol</h1>
-      <button onclick="scrollToCards()">Vamos nessa</button>
+      <button onclick="scrollToCards()" class="btn btn-primary mt-3">Vamos nessa</button>
     </div>
   </div>
 
   <!-- Carrossel -->
-<div id="carouselExample" class="carousel slide" data-ride="carousel">
+  <div id="carouselExample" class="carousel slide mt-4" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/img02.jpg" class="d-block mx-auto" alt="Chuteira" style="max-height: 300px; width: auto;">
+        <img src="img/img02.jpg" class="d-block mx-auto img-fluid" alt="Chuteira">
       </div>
       <div class="carousel-item">
-        <img src="img/img03.jpg" class="d-block mx-auto" alt="Bola de Futebol" style="max-height: 300px; width: auto;">
+        <img src="img/img03.jpg" class="d-block mx-auto img-fluid" alt="Bola de Futebol">
       </div>
       <div class="carousel-item">
-        <img src="img/img04.jpg" class="d-block mx-auto" alt="Luva de Goleiro" style="max-height: 300px; width: auto;">
+        <img src="img/img04.jpg" class="d-block mx-auto img-fluid" alt="Luva de Goleiro">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
@@ -74,186 +63,71 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-</div>
+  </div>
 
-  <!-- Seção de cards -->
-  <div class="container my-5" id="card-section">
-    <div class="row">
-      <!-- Card 1: Bola de Futebol -->
-      <div class="col-md-4" id="bola">
-        <div class="card">
-          <img src="img/img03.jpg" class="card-img-top" alt="Bola de Futebol">
-          <div class="card-body">
-            <h5 class="card-title">Bola de Futebol</h5>
-            <p class="card-text">A bola perfeita para suas partidas, resistente e com ótimo controle.</p>
-            <a href="#" class="btn btn-primary">Comprar Agora</a>
-          </div>
-=======
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top 3 Invenções mais Inúteis e Engraçadas</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css"> 
-</head>
-<body>
-
-
-    <!-- início do menu -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-           
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#card">Torradeira de Selfie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#card">Ventilador de Hashi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#card">Despertador que Foge</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#rodape">Contato</a>
-                    </li>
-                </ul>
-            </div>
->>>>>>> a9a6461773ac8d0d3e00622755f50a1b7ef45aba
+ <!-- card -->
+<div class="container my-5" id="card-section">
+  <div class="row">
+    <!-- Card 1: Bola de Futebol -->
+    <div class="col-md-4" id="bola">
+      <div class="card">
+        <img src="img/img03.jpg" class="card-img-top" alt="Bola de Futebol">
+        <div class="card-body">
+          <h5 class="card-title">Bola de Futebol</h5>
+          <p class="card-text">A bola oficial da Copa do Mundo é uma combinação de precisão e alta tecnologia, desenhada para oferecer maior controle, estabilidade e aerodinâmica em todas as condições climáticas. Com sua superfície texturizada e design inovador, ela garante o desempenho ideal, tornando cada partida uma experiência incrível.</p>
+          <a href="https://produto.mercadolivre.com.br/MLB-4567275200-copa-do-mundo-do-catar-2022-padro-tamanho-5-futebol-_JM?matt_tool=66649777&matt_word=&matt_source=google&matt_campaign_id=14302214874&matt_ad_group_id=124787841286&matt_match_type=&matt_network=g&matt_device=c&matt_creative=539425484551&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=5348716801&matt_product_id=MLB4567275200&matt_product_partition_id=1799111087882&matt_target_id=pla-1799111087882&cq_src=google_ads&cq_cmp=14302214874&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gclid=Cj0KCQjwveK4BhD4ARIsAKy6pMKMSTsDizyPU16kmS9B18WACsjvceF5JwUBZfgNr2F7Xb6RqVFCsQwaAulLEALw_wcB" class="btn btn-primary" target="_blank">Comprar Agora</a>
         </div>
       </div>
-      <!-- Card 2: Chuteira -->
-      <div class="col-md-4" id="chuteira">
-        <div class="card">
-          <img src="img/img02.jpg" class="card-img-top" alt="Chuteira">
-          <div class="card-body">
-            <h5 class="card-title">Chuteira</h5>
-            <p class="card-text">Chuteira confortável, ideal para velocidade e precisão em campo.</p>
-            <a href="#" class="btn btn-primary">Comprar Agora</a>
-          </div>
+    </div>
+    <!-- Card 2: Chuteira -->
+    <div class="col-md-4" id="chuteira">
+      <div class="card">
+        <img src="img/img02.jpg" class="card-img-top" alt="Chuteira">
+        <div class="card-body">
+          <h5 class="card-title">Chuteira</h5>
+          <p class="card-text">Inspirada em Cristiano Ronaldo, a chuteira é projetada para velocidade, agilidade e conforto. Feita com materiais leves e resistentes, ela proporciona máxima aderência e explosão em campo, sendo a escolha perfeita para quem busca dominar o jogo com o mesmo estilo e potência do craque português.</p>
+          <a href="https://www.nike.com.br/chuteira-nike-zoom-mercurial-superfly-9-elite-cr7-campo-024175.html?srsltid=AfmBOopmByYsixY8GpAeI6l2KSd_wgNO-_MN17wTThZ4W5rqnkRL5djR" class="btn btn-primary" target="_blank">Comprar Agora</a>
         </div>
       </div>
-      <!-- Card 3: Luva -->
-      <div class="col-md-4" id="luva">
-        <div class="card">
-          <img src="img/img04.jpg" class="card-img-top" alt="Luva de Goleiro">
-          <div class="card-body">
-            <h5 class="card-title">Luva de Goleiro</h5>
-            <p class="card-text">Luva de goleiro com excelente aderência e proteção.</p>
-            <a href="#" class="btn btn-primary">Comprar Agora</a>
-          </div>
+    </div>
+    <!-- Card 3: Luva -->
+    <div class="col-md-4" id="luva">
+      <div class="card">
+        <img src="img/img04.jpg" class="card-img-top" alt="Luva de Goleiro">
+        <div class="card-body">
+          <h5 class="card-title">Luva de Goleiro</h5>
+          <p class="card-text">A luva usada por Emiliano Martínez, goleiro destaque na última Copa, oferece proteção superior e uma aderência sem igual, permitindo defesas precisas e confiantes. Feita para resistir a grandes impactos, é ideal para quem deseja elevar seu jogo e fazer defesas épicas.</p>
+          <a href="https://www.netshoes.com.br/p/luvas-de-goleiro-nike-match-unissex-preto-JD8-6462-006?campaign=gglepqpla&gad_source=1&gclid=CI6T69TTpIkDFQ5Q3QId28UIiQ&gclsrc=ds" class="btn btn-primary" target="_blank">Comprar Agora</a>
         </div>
       </div>
     </div>
   </div>
-
-<<<<<<< HEAD
-<!-- rodape -->
-  <footer class="container-fluid mt-5 mb-3">
-    <p>&copy; 2024 - Leonardo Zaia</p>
-</footer>
-=======
-    <h1 class="text-center">Top 3 Invenções mais Inúteis e Engraçadas</h1>
+</div>
 
 
-
-<!-- inicio do carrousel -->
-
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/img01.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/img02.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/img03.jpg" class="d-block w-100" alt="..."> 
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    <header class="container mt-5">
-    </header>
-    <!-- fim do carrousel -->
-
-   
-<!-- cards -->
-    <main class="container mt-5">
-        <h1 class="text-center">Top 3 Invenções mais Inúteis e Engraçadas</h1>
-        <section>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card"  id="card">
-                        <img src="img/img01.jpg" class="card-img-top" alt="Torradeira de Selfie">
-                        <div class="card-body">
-                            <h5 class="card-title">Torradeira de Selfie</h5>
-                            <p class="card-text">Imagine começar o dia vendo seu rosto em uma torrada! Com a torradeira de selfie, você pode "imprimir" uma selfie no pão. É um toque de humor matinal, mas ninguém garante que a imagem ficará bonita. Afinal, tem algo mais inútil (e divertido) do que comer sua própria foto no café da manhã?</p>
-                            <a href="https://www.gadoo.com.br/curiosidades/conheca-torradeira-que-imprime-seu-rosto-pao/#google_vignette" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card"  id="card">
-                    <img src="img/img02.jpg" class="card-img-top" alt="Ventilador de Hashi">
-                        <div class="card-body">
-                            <h5 class="card-title">Ventilador de Hashi</h5>
-                            <p class="card-text">Esse utensílio vem com um mini ventilador para resfriar o macarrão enquanto você come com hashi. Parece útil, mas você ainda precisa mirar bem! O ventiladorzinho é tão fraco que acaba virando uma piada, mas a ideia de um "ventilador portátil de comida" é no mínimo curiosa.</p>
-                            <a href="https://www.facebook.com/conheciencia/posts/ventilador-de-hashi-genial-ou-idiotasem-sombra-de-d%C3%BAvidas-o-jap%C3%A3o-%C3%A9-um-pa%C3%ADs-bast/1963756240584521/" class="btn btn-primary">Saiba mais </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card"  id="card">
-                        <img src="img/img03.jpg" class="card-img-top" alt="Despertador que Foge">
-                        <div class="card-body">
-                            <h5 class="card-title">Despertador que Foge</h5>
-                            <p class="card-text">Para quem não consegue acordar cedo, este despertador é uma verdadeira "ameaça"! Ele sai correndo pelo quarto assim que toca, obrigando você a se levantar para desligá-lo. Parece eficaz, mas o caos matinal compensa a eficácia? Essa invenção é tão inútil quanto uma perseguição com travesseiros!</p>
-                            <a href="https://www.amazon.com.br/CLOCKY-Despertador-Original-Dorminhoco-Divertido/dp/B004MSMUGI" class="btn btn-primary">Saiba mais</a>
-                        </div>
-                    </div>
-                </div>
+  <!-- Rodapé moderno -->
+  <footer class="footer-custom">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Inscrever-se</h5>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Digite seu email">
             </div>
-        </section>
-
-        <!-- fim cards -->
-
-<!-- rodape -->
-        <section>
-            <div class="rodape" id="rodape"></div>
-            <h2 class="text-center mt-5">Contato</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Insira seu Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text"> Nunca compartilharemos seu e-mail com mais ninguém.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Confirme</label>
-                </div>
-                <button type="submit" class="btn btn-primary">enviar</button>
-            </form>
-        </section>
-    </main>
-    <footer class="container-fluid mt-5 mb-3">
-        <p>&copy; 2024 - Leonardo Zaia</p>
-    </footer>
-    <!-- rodape -->
->>>>>>> a9a6461773ac8d0d3e00622755f50a1b7ef45aba
+            <button type="submit" class="btn btn-primary">Inscrever-se</button>
+          </form>
+        </div>
+        <div class="col-md-6 text-center">
+          <h5>Contato</h5>
+          <p>Email: leonardo.silva1896@etec.sp.gov.br</p>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2024 Equipamentos para Futebol de Leonardo Zaia. Todos os direitos reservados.</p>
+      </div>
+    </div>
+</footer>
 
 
   <!-- Scripts do Bootstrap -->
@@ -261,17 +135,11 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <!-- Script para rolar até os cards ao clicar no botão -->
+  <!-- Script para rolar até os cards -->
   <script>
     function scrollToCards() {
       document.getElementById('card-section').scrollIntoView({ behavior: 'smooth' });
     }
   </script>
 </body>
-<<<<<<< HEAD
 </html>
-
-
-=======
-</html>
->>>>>>> a9a6461773ac8d0d3e00622755f50a1b7ef45aba

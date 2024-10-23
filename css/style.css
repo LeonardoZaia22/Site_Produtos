@@ -1,75 +1,82 @@
 body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif; /* Definindo fonte principal */
-  }
-  
-  .navbar-brand {
-    font-weight: bold;
-  }
-  
-  .hero {
-    position: relative;
-    text-align: center;
-    color: rgb(7, 34, 7);
-  }
-  
-  .hero img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  .hero-text h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    margin: 10px 0;
-    color: rgb(7, 34, 7);
-  }
-  
-  .hero-text p {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-  
-  .hero-text button {
-    background-color: white;
-    border: 2px solid #1a2a44;
-    color: #1a2a44;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .hero-text button:hover {
-    background-color: #1a2a44;
-    color: white;
-  }
-  
-  .card img {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-
-.carousel-item{
-    width: 600px;
-    height: 600px;
-    margin-left: 500px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; /* Definindo fonte principal */
 }
 
-.carousel img {
-    width: 100px; 
-    height: 400px; 
+.navbar-brand {
+  font-weight: bold;
 }
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: rgb(7, 34, 7);
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin: 10px 0;
+  color: rgb(7, 34, 7);
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.hero-text button {
+  background-color: white;
+  border: 2px solid #1a2a44;
+  color: #1a2a44;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-text button:hover {
+  background-color: #1a2a44;
+  color: white;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.carousel-inner img {
+  width: 300px; 
+  height: auto; 
+  max-height: 300px; 
+}
+
+
+.carousel {
+  margin: 0 auto;
+  max-width: 600px; 
+}
+.footer-custom {
+  background-color: #1a2a44;
+  color: white;
+  margin-top: 5rem;
+}
+
+
 
 
